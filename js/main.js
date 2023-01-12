@@ -74,7 +74,6 @@ console.log(replace);
 
 let origin = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
 
-let splitOrigin = (origin.split(' ').length);
+const orig = origin.split(' ');
 
-console.log(splitOrigin);
-
+console.log(orig);
