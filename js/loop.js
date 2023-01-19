@@ -158,3 +158,46 @@ for (let i = 0; i < 3000; i++) {
 let replace = row1.slice (0, -2) + '.';
 console.log(replace);
 
+//  3 uzduotis
+
+for (let a = 0; a < 10; a++) {
+    let row = "";
+    for (let i = 0; i < 10; i++) {
+        row += "*";   
+    }
+    console.log(row);   
+} 
+
+// for (let i = 0; i <=10; i++) {
+//     let row = "*";
+//     console.log(row);
+// }
+
+// 8 užduotis is JS2
+
+let n8 = 0;
+let origin = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+const orig = origin.split(' ');
+console.log(orig);
+for (let i = 0; i < orig.length; i++) {
+    if (orig[i].length <= 5) {
+        n8++;
+    }
+}
+
+console.log("Trumpesni arba lygus 5 = " + n8);
+
+// 4 uzduotis
+
+for (let a = 0; a < 10; a++) {
+    let row = "";
+    for (let i = 0; i < 10; i++) {
+        if (a == i || a == 9-i) {
+            row += "X";
+        } else {
+        row += "*";
+        }
+    }
+    console.log(row);
+}
+

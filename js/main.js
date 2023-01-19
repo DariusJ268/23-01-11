@@ -66,7 +66,7 @@ let fullName = "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))
 
 console.log(fullName);
 
-let replace = (fullName.replace(/[a-z, :, -]/ig, ''));
+let replace = (fullName.replace(/[a-z :-]/ig, ''));
 
 console.log(replace);
 
@@ -77,3 +77,7 @@ let origin = "Don't Be a Menace to South Central While Drinking Your Juice in th
 const orig = origin.split(' ');
 
 console.log(orig);
+
+
+// 2023-01-12 pamoka. Ciklai (loop)
+
