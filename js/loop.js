@@ -201,3 +201,120 @@ for (let a = 0; a < 10; a++) {
     console.log(row);
 }
 
+// 5 uzduotis
+
+// let s = 0;
+// let h = 0;
+// let i = 0;
+// do {
+//     i = Math.round(Math.random());
+//     if (i = 0) {
+//         break
+//     }
+// }
+// while (true);
+
+// console.log("Skaicius iskrito " + s + " karta(u).");
+// console.log("Herbas iskrito " + h + " karta(u).");
+
+
+// while(true){
+//     let rndNum = Math.round(Math.round(Math.random()));
+//     console.log(rndNum);
+//     if(!rndNum){
+//         break;
+//     }
+// }
+
+let sA = 0;
+let hA = 0;
+while(true) {
+    let rndNum = Math.round(Math.round(Math.random()));
+    if(rndNum == 1){
+        sA++;
+    } else {
+        hA++;
+        break;
+    }
+}
+console.log("S = " + sA);
+console.log( "H = " + hA);
+
+let sB = 0;
+let hB = 0;
+while(true){
+    let rndNum = Math.round(Math.round(Math.random()));
+    // console.log(rndNum);
+    if(rndNum == 1){
+        sB++;
+    } else {
+        hB++;
+    }
+    if (hB == 3) {
+        break;
+    }
+}
+console.log("S = " + sB);
+console.log( "H = " + hB);
+
+let sC = 0;
+let hC = 0;
+while(true){
+    let rndNum = Math.round(Math.round(Math.random()));
+    // console.log(rndNum);
+    if(rndNum == 0){
+        hC++;
+    } else {
+        hC = 0;
+    }
+    if (hC == 3) {
+        break;
+    }
+    if (rndNum == 1) {
+        sC++;
+    }
+}
+console.log("S = " + sC);
+console.log( "H = " + hC);
+
+// 6 uzduotis
+
+let numK = 0;
+let numP = 0;
+let KazysPr = 0;
+let PetrasPr = 0;
+let KazysMin = 5;
+let KazysMax = 25;
+let PetrasMin = 10;
+let PetrasMax = 20;
+let row6 = "";
+while (true) {
+    let numK = KazysMin + Math.round((Math.random()) * (KazysMax - KazysMin));
+    let numP = PetrasMin + Math.round((Math.random()) * (PetrasMax - PetrasMin));
+    KazysPr+=numK;
+    PetrasPr+=numP;
+    row6 += "Kazio taskai: " + numK + "; Petro taskai: " + numP;
+    if (numK > numP) {
+            row6 += ". Partija laimejo Kazys. ";
+        } else if (numP > numK) {
+            row6 += ". Partija laimejo Petras. ";
+        } else {
+            row6 += ". Partijos rezultatas - lygiosios. ";
+        };
+    if ((KazysPr >= 222) || (PetrasPr >= 222)) {
+        break;
+    }
+}
+console.log(row6);
+if (KazysPr > PetrasPr) {
+    console.log("Zaidima laimejo: Kazys - " + KazysPr + " taskai(u)");
+} else  if (KazysPr < PetrasPr) {
+    console.log("Zaidima laimejo: Petras - " + PetrasPr + " taskai(u)");
+} else {
+    console.log("Zaidimo rezultatas - lygiosios. Abu zaidejai surinko " + KazysPr + " taskus");
+}
+console.log(KazysPr);
+console.log(PetrasPr);
+
+// 8 uzduotis
+
