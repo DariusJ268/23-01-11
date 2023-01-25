@@ -318,3 +318,37 @@ console.log(PetrasPr);
 
 // 8 uzduotis
 
+console.log("-----8a-----");
+let viniesIlgis = 85;
+
+for (let i = 0; i < 5; i++) {
+    let smugis = 0;
+    let ikalimas = 0;
+    let skaicius = 0;
+    let rKalimasmin = 5;
+    let rKalimasmax = 20;
+    while (ikalimas < viniesIlgis) {
+        smugis = rKalimasmin + Math.round((Math.random()) * (rKalimasmax - rKalimasmin));
+        ikalimas += smugis;
+        skaicius ++;
+    }
+    console.log((i+1) + "-oji vinis ikalta per " + skaicius + " smugius. Ikalimo gylis: " + ikalimas);
+}
+
+console.log("-----8b-----");
+
+for (let i = 0; i < 5; i++) {
+    let smugis = 0;
+    let ikalimas = 0;
+    let skaicius = 0;
+    let rKalimasmin = 20;
+    let rKalimasmax = 30;
+    while (ikalimas < viniesIlgis) {
+        if (Math.round(Math.random())) {
+            smugis = rKalimasmin + Math.round((Math.random()) * (rKalimasmax - rKalimasmin));
+            ikalimas += smugis;
+        }
+        skaicius ++;
+    }
+    console.log((i+1) + "-oji vinis ikalta per " + skaicius + " smugius. Ikalimo gylis: " + ikalimas);
+}
